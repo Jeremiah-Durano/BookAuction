@@ -1,0 +1,13 @@
+{% extends 'no-sidebar.html.twig' %}
+
+{% block title %}New User{% endblock %}
+{% block pageHeader  %} New User  {% endblock %}
+{% block javascripts %}
+{% endblock %}
+{% block body %}
+    <h1>Create new User</h1>
+
+    {{ include('user/_form.html.twig') }}
+
+    <a href="{{ path('user_index') }}">back to list</a>
+{% endblock %}

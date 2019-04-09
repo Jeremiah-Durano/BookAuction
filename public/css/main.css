@@ -1890,6 +1890,7 @@ input, select, textarea {
 			border-left: solid 1px #d2d7dc;
 			padding-left: 1em;
 			margin-left: 1em;
+			color: #000000;
 		}
 
 			ul.menu li:first-child {

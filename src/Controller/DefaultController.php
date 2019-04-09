@@ -44,11 +44,11 @@ class DefaultController extends AbstractController
         return $this->render($template, $args);
     }
     /**
-     * @Route("/login", name="login")
+     * @Route("/about", name="default_about")
      */
-    public function login()
+    public function about()
     {
-        $template = 'logIn.html.twig';
+        $template = 'default/about.html.twig';
         $args = [];
         return $this->render($template, $args);
     }

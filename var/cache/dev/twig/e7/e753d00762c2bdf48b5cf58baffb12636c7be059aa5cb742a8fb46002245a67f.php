@@ -40,24 +40,16 @@ class __TwigTemplate_840bfbcc380f4c5673b6bd0cbe7a18ac9ec902cd80fd74c002bad2b5780
 
         // line 1
         echo "<!DOCTYPE HTML>
-<!--
-\tTelephasic by HTML5 UP
-\thtml5up.net | @ajlkn
-\tFree for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 <head>
     <title>";
-        // line 9
+        // line 4
         $this->displayBlock('title', $context, $blocks);
         echo "</title>
     <meta charset=\"utf-8\" />
     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, user-scalable=no\" />
     <link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css\" integrity=\"sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T\" crossorigin=\"anonymous\">
-    <!--<link rel=\"stylesheet\" href=\"css/main.css\" /> -->
-    <style>
-        @import '/css/main.css';
-    </style>
+    <link rel=\"stylesheet\" href=\"css/main.css\" />
 </head>
 <body class=\"homepage is-preload\">
 <div id=\"page-wrapper\">
@@ -67,22 +59,23 @@ class __TwigTemplate_840bfbcc380f4c5673b6bd0cbe7a18ac9ec902cd80fd74c002bad2b5780
         <div id=\"header\" class=\"container\">
 
             <!-- Logo -->
-            <h1 id=\"logo\"><a href=\"index.html.twig\">Book Auction</a></h1>
+            <h1 id=\"logo\"><a href=\"#\">Book Auction</a></h1>
 
             <!-- Nav -->
             <nav id=\"nav\">
                 <ul>
                     <a href=\"";
-        // line 31
+        // line 23
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getUrl("left");
         echo "\">Left Sidebar</a>
-                     <!--<a href=\"\">Left Sidebar</a>-->
                     <li class=\"break\"><a href=\"";
-        // line 33
-        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getUrl("login");
+        // line 24
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getUrl("default_login");
         echo "\">Login</a></li>
-                   <!-- <li class=\"break\"><a href=\"\">Right Sidebar</a></li>-->
-                    <a href=\"no-sidebar.html.twig\">No Sidebar</a>
+                    <a href=\"";
+        // line 25
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getUrl("default_about");
+        echo "\">About</a>
                 </ul>
             </nav>
 
@@ -110,7 +103,7 @@ class __TwigTemplate_840bfbcc380f4c5673b6bd0cbe7a18ac9ec902cd80fd74c002bad2b5780
                 <section class=\"col-6 col-12-narrower feature\">
                     <div class=\"image-wrapper first\">
                         <a href=\"#\" class=\"image featured first\"><img src=\"";
-        // line 62
+        // line 52
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/pic01.jpg"), "html", null, true);
         echo "\" alt=\"\" /></a>
                     </div>
@@ -128,7 +121,7 @@ class __TwigTemplate_840bfbcc380f4c5673b6bd0cbe7a18ac9ec902cd80fd74c002bad2b5780
                 <section class=\"col-6 col-12-narrower feature\">
                     <div class=\"image-wrapper\">
                         <a href=\"#\" class=\"image featured\"><img src=\"";
-        // line 77
+        // line 67
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/pic02.jpg"), "html", null, true);
         echo "\" alt=\"\" /></a>
                     </div>
@@ -158,7 +151,7 @@ class __TwigTemplate_840bfbcc380f4c5673b6bd0cbe7a18ac9ec902cd80fd74c002bad2b5780
                 <section class=\"col-4 col-12-narrower feature\">
                     <div class=\"image-wrapper first\">
                         <a href=\"#\" class=\"image featured\"><img src=\"";
-        // line 104
+        // line 94
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/pic03.jpg"), "html", null, true);
         echo "\" alt=\"\" /></a>
                     </div>
@@ -168,7 +161,7 @@ class __TwigTemplate_840bfbcc380f4c5673b6bd0cbe7a18ac9ec902cd80fd74c002bad2b5780
                 <section class=\"col-4 col-12-narrower feature\">
                     <div class=\"image-wrapper\">
                         <a href=\"#\" class=\"image featured\"><img src=\"";
-        // line 111
+        // line 101
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/pic04.jpg"), "html", null, true);
         echo "\" alt=\"\" /></a>
                     </div>
@@ -178,7 +171,7 @@ class __TwigTemplate_840bfbcc380f4c5673b6bd0cbe7a18ac9ec902cd80fd74c002bad2b5780
                 <section class=\"col-4 col-12-narrower feature\">
                     <div class=\"image-wrapper\">
                         <a href=\"#\" class=\"image featured\"><img src=\"";
-        // line 118
+        // line 108
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/pic05.jpg"), "html", null, true);
         echo "\" alt=\"\" /></a>
                     </div>
@@ -231,7 +224,7 @@ class __TwigTemplate_840bfbcc380f4c5673b6bd0cbe7a18ac9ec902cd80fd74c002bad2b5780
 
     }
 
-    // line 9
+    // line 4
     public function block_title($context, array $blocks = [])
     {
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
@@ -261,27 +254,19 @@ class __TwigTemplate_840bfbcc380f4c5673b6bd0cbe7a18ac9ec902cd80fd74c002bad2b5780
 
     public function getDebugInfo()
     {
-        return array (  235 => 9,  182 => 118,  172 => 111,  162 => 104,  132 => 77,  114 => 62,  82 => 33,  77 => 31,  52 => 9,  42 => 1,);
+        return array (  228 => 4,  175 => 108,  165 => 101,  155 => 94,  125 => 67,  107 => 52,  77 => 25,  73 => 24,  69 => 23,  47 => 4,  42 => 1,);
     }
 
     public function getSourceContext()
     {
         return new Source("<!DOCTYPE HTML>
-<!--
-\tTelephasic by HTML5 UP
-\thtml5up.net | @ajlkn
-\tFree for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 <head>
     <title>{% block title %}Book Auction{% endblock %}</title>
     <meta charset=\"utf-8\" />
     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, user-scalable=no\" />
     <link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css\" integrity=\"sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T\" crossorigin=\"anonymous\">
-    <!--<link rel=\"stylesheet\" href=\"css/main.css\" /> -->
-    <style>
-        @import '/css/main.css';
-    </style>
+    <link rel=\"stylesheet\" href=\"css/main.css\" />
 </head>
 <body class=\"homepage is-preload\">
 <div id=\"page-wrapper\">
@@ -291,16 +276,14 @@ class __TwigTemplate_840bfbcc380f4c5673b6bd0cbe7a18ac9ec902cd80fd74c002bad2b5780
         <div id=\"header\" class=\"container\">
 
             <!-- Logo -->
-            <h1 id=\"logo\"><a href=\"index.html.twig\">Book Auction</a></h1>
+            <h1 id=\"logo\"><a href=\"#\">Book Auction</a></h1>
 
             <!-- Nav -->
             <nav id=\"nav\">
                 <ul>
                     <a href=\"{{ url('left') }}\">Left Sidebar</a>
-                     <!--<a href=\"\">Left Sidebar</a>-->
-                    <li class=\"break\"><a href=\"{{ url('login') }}\">Login</a></li>
-                   <!-- <li class=\"break\"><a href=\"\">Right Sidebar</a></li>-->
-                    <a href=\"no-sidebar.html.twig\">No Sidebar</a>
+                    <li class=\"break\"><a href=\"{{ url('default_login') }}\">Login</a></li>
+                    <a href=\"{{ url('default_about') }}\">About</a>
                 </ul>
             </nav>
 

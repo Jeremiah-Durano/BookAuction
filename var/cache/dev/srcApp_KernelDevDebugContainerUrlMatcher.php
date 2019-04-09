@@ -20,11 +20,15 @@ class srcApp_KernelDevDebugContainerUrlMatcher extends Symfony\Bundle\FrameworkB
             '/_profiler/search_bar' => [[['_route' => '_profiler_search_bar', '_controller' => 'web_profiler.controller.profiler::searchBarAction'], null, null, null, false, false, null]],
             '/_profiler/phpinfo' => [[['_route' => '_profiler_phpinfo', '_controller' => 'web_profiler.controller.profiler::phpinfoAction'], null, null, null, false, false, null]],
             '/_profiler/open' => [[['_route' => '_profiler_open_file', '_controller' => 'web_profiler.controller.profiler::openAction'], null, null, null, false, false, null]],
+            '/admin' => [[['_route' => 'admin', '_controller' => 'App\\Controller\\AdminController::index'], null, null, null, false, false, null]],
             '/' => [[['_route' => 'index', '_controller' => 'App\\Controller\\DefaultController::index'], null, null, null, false, false, null]],
             '/leftSidebar' => [[['_route' => 'left', '_controller' => 'App\\Controller\\DefaultController::leftSidebar'], null, null, null, false, false, null]],
             '/noSidebar' => [[['_route' => 'nSideBar', '_controller' => 'App\\Controller\\DefaultController::noSidebar'], null, null, null, false, false, null]],
             '/rightSidebar' => [[['_route' => 'rSidebar', '_controller' => 'App\\Controller\\DefaultController::rightSidebar'], null, null, null, false, false, null]],
-            '/login' => [[['_route' => 'login', '_controller' => 'App\\Controller\\DefaultController::login'], null, null, null, false, false, null]],
+            '/about' => [[['_route' => 'default_about', '_controller' => 'App\\Controller\\DefaultController::about'], null, null, null, false, false, null]],
+            '/login' => [[['_route' => 'app_login', '_controller' => 'App\\Controller\\SecurityController::login'], null, null, null, false, false, null]],
+            '/user' => [[['_route' => 'user', '_controller' => 'App\\Controller\\UserController::index'], null, null, null, false, false, null]],
+            '/logout' => [[['_route' => 'logout'], null, null, null, false, false, null]],
         ];
         $this->regexpList = [
             0 => '{^(?'

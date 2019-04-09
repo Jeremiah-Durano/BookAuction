@@ -1,0 +1,27 @@
+{% extends 'no-sidebar.html.twig' %}
+
+{% block title %}Access Denied{% endblock %}
+
+{% block body %}
+    <!-- Header -->
+    <div id="header-wrapper">
+        <!-- Hero -->
+        <section id="hero" class="container">
+            <header>
+                <h2>Sorry Access Denied Please Login</h2>
+                <br />
+            </header>
+        </section>
+    </div>
+    <br>
+    <div id="promo-wrapper">
+        <section id="promo">
+            <h2>Click Button To Go Back To Login Page</h2>
+            <br>
+            <a href="{{ url('app_login') }}" class="button">Back To Login</a>
+        </section>
+    </div>
+
+
+    </div>
+{% endblock %}

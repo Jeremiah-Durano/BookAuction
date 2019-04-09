@@ -1,0 +1,64 @@
+{% extends 'no-sidebar.html.twig' %}
+
+{% block title %}About{% endblock %}
+{% block pageHeader %}About{% endblock %}
+
+{% block body %}
+    <div class="wrapper">
+        <div class="container">
+            <section class="col-6 col-12-narrower feature">
+                <header>
+                    <h2>Welcome to the About Page</h2>
+                </header>
+                <p>
+                    This Website is just a small Second Hand Book website with a few books
+                    in which users can bid for. <br>Try and bid early! While Stocks Last! It's a first come first
+                    serve basis :).
+
+                <ul class="actions">
+                    <li><a class="button" href="{{ url('index') }}">Back To Home Page</a></li>
+                </ul>
+                </p>
+            </section>
+        </div>
+    </div>
+    <!-- Features 1 -->
+    <div class="wrapper">
+        <div class="container">
+            <div class="row">
+                <section class="col-6 col-12-narrower feature">
+                    <div class="image-wrapper first">
+                        <a class="image featured first"><img src="{{ asset('images/pic01.jpg') }}" alt="" /></a>
+                    </div>
+                    <header>
+                        <h2>Book 1</h2>
+                    </header>
+                    <p>Lorem ipsum dolor sit amet consectetur et sed adipiscing elit. Curabitur vel
+                        sem sit dolor neque semper magna. Lorem ipsum dolor sit amet consectetur et sed
+                        adipiscing elit. Curabitur vel sem sit.</p>
+                    <ul class="actions">
+                        <li><a href="#" class="button">See More</a></li>
+                    </ul>
+                </section>
+                <section class="col-6 col-12-narrower feature">
+                    <div class="image-wrapper">
+                        <a href="#" class="image featured"><img src="{{ asset('images/pic02.jpg') }}" alt="" /></a>
+                    </div>
+                    <header>
+                        <h2>Book 2</h2>
+                    </header>
+                    <p>Lorem ipsum dolor sit amet consectetur et sed adipiscing elit. Curabitur vel
+                        sem sit dolor neque semper magna. Lorem ipsum dolor sit amet consectetur et sed
+                        adipiscing elit. Curabitur vel sem sit.</p>
+                    <ul class="actions">
+                        <li><a href="#" class="button">See More</a></li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </div>
+
+
+
+
+{% endblock %}

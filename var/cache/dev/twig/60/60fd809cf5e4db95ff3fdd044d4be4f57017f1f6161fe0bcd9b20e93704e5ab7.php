@@ -64,12 +64,17 @@ class __TwigTemplate_d0dcd421254a798d87c84a3eff6671ea58b32c95b7db0244e3870860a5b
 \t\t\t\t\t<div id=\"header\" class=\"container\">
 
 \t\t\t\t\t\t<!-- Logo -->
-\t\t\t\t\t\t\t<h1 id=\"logo\"><a href=\"index.html.twig\">Telephasic</a></h1>
-
+\t\t\t\t\t\t\t<h1 id=\"logo\"><a href=\"";
+        // line 22
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getUrl("index");
+        echo "\">Book Auction</a></h1>
 \t\t\t\t\t\t<!-- Nav -->
 \t\t\t\t\t\t\t<nav id=\"nav\">
 \t\t\t\t\t\t\t\t<ul>
-\t\t\t\t\t\t\t\t\t<li><a href=\"left-sidebar.html.twig\">Left Sidebar</a></li>
+\t\t\t\t\t\t\t\t\t<li><a href=\"";
+        // line 26
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getUrl("left");
+        echo "\">Left Sidebar</a></li>
 \t\t\t\t\t\t\t\t\t<li class=\"break\"><a href=\"right-sidebar.html.twig\">Right Sidebar</a></li>
 \t\t\t\t\t\t\t\t\t<li><a href=\"no-sidebar.html.twig\">No Sidebar</a></li>
 \t\t\t\t\t\t\t\t</ul>
@@ -82,9 +87,9 @@ class __TwigTemplate_d0dcd421254a798d87c84a3eff6671ea58b32c95b7db0244e3870860a5b
 \t\t\t\t<div class=\"wrapper\">
 \t\t\t\t\t<div class=\"container\" id=\"main\">
 \t\t\t\t\t\t";
-        // line 39
+        // line 38
         $this->displayBlock('body', $context, $blocks);
-        // line 40
+        // line 39
         echo "\t\t\t\t\t</div>
 \t\t\t\t</div>
 
@@ -136,7 +141,7 @@ class __TwigTemplate_d0dcd421254a798d87c84a3eff6671ea58b32c95b7db0244e3870860a5b
 
     }
 
-    // line 39
+    // line 38
     public function block_body($context, array $blocks = [])
     {
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
@@ -158,9 +163,14 @@ class __TwigTemplate_d0dcd421254a798d87c84a3eff6671ea58b32c95b7db0244e3870860a5b
         return "no-sidebar.html.twig";
     }
 
+    public function isTraitable()
+    {
+        return false;
+    }
+
     public function getDebugInfo()
     {
-        return array (  140 => 39,  123 => 9,  88 => 40,  86 => 39,  53 => 9,  43 => 1,);
+        return array (  145 => 38,  128 => 9,  93 => 39,  91 => 38,  76 => 26,  69 => 22,  53 => 9,  43 => 1,);
     }
 
     public function getSourceContext()
@@ -186,12 +196,11 @@ class __TwigTemplate_d0dcd421254a798d87c84a3eff6671ea58b32c95b7db0244e3870860a5b
 \t\t\t\t\t<div id=\"header\" class=\"container\">
 
 \t\t\t\t\t\t<!-- Logo -->
-\t\t\t\t\t\t\t<h1 id=\"logo\"><a href=\"index.html.twig\">Telephasic</a></h1>
-
+\t\t\t\t\t\t\t<h1 id=\"logo\"><a href=\"{{ url('index') }}\">Book Auction</a></h1>
 \t\t\t\t\t\t<!-- Nav -->
 \t\t\t\t\t\t\t<nav id=\"nav\">
 \t\t\t\t\t\t\t\t<ul>
-\t\t\t\t\t\t\t\t\t<li><a href=\"left-sidebar.html.twig\">Left Sidebar</a></li>
+\t\t\t\t\t\t\t\t\t<li><a href=\"{{ url('left') }}\">Left Sidebar</a></li>
 \t\t\t\t\t\t\t\t\t<li class=\"break\"><a href=\"right-sidebar.html.twig\">Right Sidebar</a></li>
 \t\t\t\t\t\t\t\t\t<li><a href=\"no-sidebar.html.twig\">No Sidebar</a></li>
 \t\t\t\t\t\t\t\t</ul>

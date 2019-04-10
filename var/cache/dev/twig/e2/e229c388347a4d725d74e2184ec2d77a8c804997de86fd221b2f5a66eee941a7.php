@@ -78,7 +78,7 @@ class __TwigTemplate_3b2a37d7646cfb56bb04bc6f20f19e46b5a8455e332bc1670044f7d55d0
         echo "\">Logout</a>
 
                 </ul>
-            </nav
+            </nav>
 
         </div>
         <!-- Hero -->
@@ -140,52 +140,6 @@ class __TwigTemplate_3b2a37d7646cfb56bb04bc6f20f19e46b5a8455e332bc1670044f7d55d0
             </div>
         </div>
     </div>
-
-    <!-- Features 2 -->
-    <div class=\"wrapper\">
-        <section class=\"container\">
-            <header class=\"major\">
-                <h2>Sed magna consequat lorem curabitur tempus</h2>
-                <p>Elit aliquam vulputate egestas euismod nunc semper vehicula lorem blandit</p>
-            </header>
-            <div class=\"row features\">
-                <section class=\"col-4 col-12-narrower feature\">
-                    <div class=\"image-wrapper first\">
-                        <a href=\"#\" class=\"image featured\"><img src=\"";
-        // line 95
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/pic03.jpg"), "html", null, true);
-        echo "\" alt=\"\" /></a>
-                    </div>
-                    <p>Lorem ipsum dolor sit amet consectetur et sed adipiscing elit. Curabitur
-                        vel sem sit dolor neque semper magna lorem ipsum.</p>
-                </section>
-                <section class=\"col-4 col-12-narrower feature\">
-                    <div class=\"image-wrapper\">
-                        <a href=\"#\" class=\"image featured\"><img src=\"";
-        // line 102
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/pic04.jpg"), "html", null, true);
-        echo "\" alt=\"\" /></a>
-                    </div>
-                    <p>Lorem ipsum dolor sit amet consectetur et sed adipiscing elit. Curabitur
-                        vel sem sit dolor neque semper magna lorem ipsum.</p>
-                </section>
-                <section class=\"col-4 col-12-narrower feature\">
-                    <div class=\"image-wrapper\">
-                        <a href=\"#\" class=\"image featured\"><img src=\"";
-        // line 109
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/pic05.jpg"), "html", null, true);
-        echo "\" alt=\"\" /></a>
-                    </div>
-                    <p>Lorem ipsum dolor sit amet consectetur et sed adipiscing elit. Curabitur
-                        vel sem sit dolor neque semper magna lorem ipsum.</p>
-                </section>
-            </div>
-            <ul class=\"actions major\">
-                <li><a href=\"#\" class=\"button\">Elevate my awareness</a></li>
-            </ul>
-        </section>
-    </div>
-
     <!-- Promo -->
     <div id=\"promo-wrapper\">
         <section id=\"promo\">
@@ -193,7 +147,6 @@ class __TwigTemplate_3b2a37d7646cfb56bb04bc6f20f19e46b5a8455e332bc1670044f7d55d0
             <a href=\"#\" class=\"button\">Breach the thresholds</a>
         </section>
     </div>
-    <br>
     <br>
     <!-- Footer -->
     <div id=\"footer-wrapper\">
@@ -207,13 +160,14 @@ class __TwigTemplate_3b2a37d7646cfb56bb04bc6f20f19e46b5a8455e332bc1670044f7d55d0
     </div>
 </div>
 
+
 <!-- Scripts -->
-<script src=\"assets/js/jquery.min.js\"></script>
-<script src=\"assets/js/jquery.dropotron.min.js\"></script>
-<script src=\"assets/js/browser.min.js\"></script>
-<script src=\"assets/js/breakpoints.min.js\"></script>
-<script src=\"assets/js/util.js\"></script>
-<script src=\"assets/js/main.js\"></script>
+<script src=\"js/jquery.min.js\"></script>
+<script src=\"js/jquery.dropotron.min.js\"></script>
+<script src=\"js/browser.min.js\"></script>
+<script src=\"js/breakpoints.min.js\"></script>
+<script src=\"js/util.js\"></script>
+<script src=\"js/main.js\"></script>
 
 </body>
 </html>";
@@ -255,7 +209,7 @@ class __TwigTemplate_3b2a37d7646cfb56bb04bc6f20f19e46b5a8455e332bc1670044f7d55d0
 
     public function getDebugInfo()
     {
-        return array (  229 => 4,  176 => 109,  166 => 102,  156 => 95,  126 => 68,  108 => 53,  77 => 25,  73 => 24,  69 => 23,  47 => 4,  42 => 1,);
+        return array (  183 => 4,  126 => 68,  108 => 53,  77 => 25,  73 => 24,  69 => 23,  47 => 4,  42 => 1,);
     }
 
     public function getSourceContext()
@@ -287,7 +241,7 @@ class __TwigTemplate_3b2a37d7646cfb56bb04bc6f20f19e46b5a8455e332bc1670044f7d55d0
                     <a href=\"{{ url('logout') }}\">Logout</a>
 
                 </ul>
-            </nav
+            </nav>
 
         </div>
         <!-- Hero -->
@@ -343,43 +297,6 @@ class __TwigTemplate_3b2a37d7646cfb56bb04bc6f20f19e46b5a8455e332bc1670044f7d55d0
             </div>
         </div>
     </div>
-
-    <!-- Features 2 -->
-    <div class=\"wrapper\">
-        <section class=\"container\">
-            <header class=\"major\">
-                <h2>Sed magna consequat lorem curabitur tempus</h2>
-                <p>Elit aliquam vulputate egestas euismod nunc semper vehicula lorem blandit</p>
-            </header>
-            <div class=\"row features\">
-                <section class=\"col-4 col-12-narrower feature\">
-                    <div class=\"image-wrapper first\">
-                        <a href=\"#\" class=\"image featured\"><img src=\"{{ asset('images/pic03.jpg') }}\" alt=\"\" /></a>
-                    </div>
-                    <p>Lorem ipsum dolor sit amet consectetur et sed adipiscing elit. Curabitur
-                        vel sem sit dolor neque semper magna lorem ipsum.</p>
-                </section>
-                <section class=\"col-4 col-12-narrower feature\">
-                    <div class=\"image-wrapper\">
-                        <a href=\"#\" class=\"image featured\"><img src=\"{{ asset('images/pic04.jpg') }}\" alt=\"\" /></a>
-                    </div>
-                    <p>Lorem ipsum dolor sit amet consectetur et sed adipiscing elit. Curabitur
-                        vel sem sit dolor neque semper magna lorem ipsum.</p>
-                </section>
-                <section class=\"col-4 col-12-narrower feature\">
-                    <div class=\"image-wrapper\">
-                        <a href=\"#\" class=\"image featured\"><img src=\"{{ asset('images/pic05.jpg') }}\" alt=\"\" /></a>
-                    </div>
-                    <p>Lorem ipsum dolor sit amet consectetur et sed adipiscing elit. Curabitur
-                        vel sem sit dolor neque semper magna lorem ipsum.</p>
-                </section>
-            </div>
-            <ul class=\"actions major\">
-                <li><a href=\"#\" class=\"button\">Elevate my awareness</a></li>
-            </ul>
-        </section>
-    </div>
-
     <!-- Promo -->
     <div id=\"promo-wrapper\">
         <section id=\"promo\">
@@ -387,7 +304,6 @@ class __TwigTemplate_3b2a37d7646cfb56bb04bc6f20f19e46b5a8455e332bc1670044f7d55d0
             <a href=\"#\" class=\"button\">Breach the thresholds</a>
         </section>
     </div>
-    <br>
     <br>
     <!-- Footer -->
     <div id=\"footer-wrapper\">
@@ -401,13 +317,14 @@ class __TwigTemplate_3b2a37d7646cfb56bb04bc6f20f19e46b5a8455e332bc1670044f7d55d0
     </div>
 </div>
 
+
 <!-- Scripts -->
-<script src=\"assets/js/jquery.min.js\"></script>
-<script src=\"assets/js/jquery.dropotron.min.js\"></script>
-<script src=\"assets/js/browser.min.js\"></script>
-<script src=\"assets/js/breakpoints.min.js\"></script>
-<script src=\"assets/js/util.js\"></script>
-<script src=\"assets/js/main.js\"></script>
+<script src=\"js/jquery.min.js\"></script>
+<script src=\"js/jquery.dropotron.min.js\"></script>
+<script src=\"js/browser.min.js\"></script>
+<script src=\"js/breakpoints.min.js\"></script>
+<script src=\"js/util.js\"></script>
+<script src=\"js/main.js\"></script>
 
 </body>
 </html>", "base.html.twig", "/Users/jeremiah/Desktop/BookAuction/templates/base.html.twig");

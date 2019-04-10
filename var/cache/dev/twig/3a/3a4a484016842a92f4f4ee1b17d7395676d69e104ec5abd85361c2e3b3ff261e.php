@@ -71,10 +71,8 @@ class __TwigTemplate_90b83e98fca33be65655d1ed62d757d899b6db619a905ecacacd345dc1b
 \t\t\t\t\t<div id=\"header\" class=\"container\">
 
 \t\t\t\t\t\t<!-- Logo -->
-\t\t\t\t\t\t\t<h1 id=\"logo\"><a href=\"";
+\t\t\t\t\t\t\t<h1 id=\"logo\"><a href=\"#\">";
         // line 24
-        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getUrl("index");
-        echo "\">";
         $this->displayBlock('pageHeader', $context, $blocks);
         echo "</a></h1>
 \t\t\t\t\t</div>
@@ -112,12 +110,12 @@ class __TwigTemplate_90b83e98fca33be65655d1ed62d757d899b6db619a905ecacacd345dc1b
 \t\t</div>
 
 \t\t<!-- Scripts -->
-\t\t\t<script src=\"assets/js/jquery.min.js\"></script>
-\t\t\t<script src=\"assets/js/jquery.dropotron.min.js\"></script>
-\t\t\t<script src=\"assets/js/browser.min.js\"></script>
-\t\t\t<script src=\"assets/js/breakpoints.min.js\"></script>
-\t\t\t<script src=\"assets/js/util.js\"></script>
-\t\t\t<script src=\"assets/js/main.js\"></script>
+\t\t\t<script src=\"js/jquery.min.js\"></script>
+\t\t\t<script src=\"js/jquery.dropotron.min.js\"></script>
+\t\t\t<script src=\"js/browser.min.js\"></script>
+\t\t\t<script src=\"js/breakpoints.min.js\"></script>
+\t\t\t<script src=\"js/util.js\"></script>
+\t\t\t<script src=\"js/main.js\"></script>
 
 \t</body>
 </html>";
@@ -209,7 +207,7 @@ class __TwigTemplate_90b83e98fca33be65655d1ed62d757d899b6db619a905ecacacd345dc1b
 
     public function getDebugInfo()
     {
-        return array (  184 => 36,  167 => 24,  150 => 5,  133 => 4,  98 => 37,  96 => 36,  87 => 30,  76 => 24,  56 => 6,  54 => 5,  50 => 4,  45 => 1,);
+        return array (  182 => 36,  165 => 24,  148 => 5,  131 => 4,  96 => 37,  94 => 36,  85 => 30,  76 => 24,  56 => 6,  54 => 5,  50 => 4,  45 => 1,);
     }
 
     public function getSourceContext()
@@ -237,7 +235,7 @@ class __TwigTemplate_90b83e98fca33be65655d1ed62d757d899b6db619a905ecacacd345dc1b
 \t\t\t\t\t<div id=\"header\" class=\"container\">
 
 \t\t\t\t\t\t<!-- Logo -->
-\t\t\t\t\t\t\t<h1 id=\"logo\"><a href=\"{{ url('index') }}\">{% block pageHeader %}{% endblock %}</a></h1>
+\t\t\t\t\t\t\t<h1 id=\"logo\"><a href=\"#\">{% block pageHeader %}{% endblock %}</a></h1>
 \t\t\t\t\t</div>
 \t\t\t\t</div>
 \t\t\t<!--NAV\t-->
@@ -267,12 +265,12 @@ class __TwigTemplate_90b83e98fca33be65655d1ed62d757d899b6db619a905ecacacd345dc1b
 \t\t</div>
 
 \t\t<!-- Scripts -->
-\t\t\t<script src=\"assets/js/jquery.min.js\"></script>
-\t\t\t<script src=\"assets/js/jquery.dropotron.min.js\"></script>
-\t\t\t<script src=\"assets/js/browser.min.js\"></script>
-\t\t\t<script src=\"assets/js/breakpoints.min.js\"></script>
-\t\t\t<script src=\"assets/js/util.js\"></script>
-\t\t\t<script src=\"assets/js/main.js\"></script>
+\t\t\t<script src=\"js/jquery.min.js\"></script>
+\t\t\t<script src=\"js/jquery.dropotron.min.js\"></script>
+\t\t\t<script src=\"js/browser.min.js\"></script>
+\t\t\t<script src=\"js/breakpoints.min.js\"></script>
+\t\t\t<script src=\"js/util.js\"></script>
+\t\t\t<script src=\"js/main.js\"></script>
 
 \t</body>
 </html>", "no-sidebar.html.twig", "/Users/jeremiah/Desktop/BookAuction/templates/no-sidebar.html.twig");

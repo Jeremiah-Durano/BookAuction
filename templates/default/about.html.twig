@@ -2,24 +2,25 @@
 
 {% block title %}About{% endblock %}
 {% block pageHeader %}About{% endblock %}
+{% block javascripts %}{% endblock %}
+
 
 {% block body %}
+    <!-- Main -->
     <div class="wrapper">
-        <div class="container">
-            <section class="col-6 col-12-narrower feature">
+        <div class="container" id="main">
+            <!-- Content -->
+            <article id="content">
                 <header>
-                    <h2>Welcome to the About Page</h2>
+                    <h2 style="text-align: center" >Welcome to the About Page</h2>
                 </header>
-                <p>
-                    This Website is just a small Second Hand Book website with a few books
+                <p style="text-align: center">
+                    This Website is just a small Second Hand Book website by yours truly, with a few books
                     in which users can bid for. <br>Try and bid early! While Stocks Last! It's a first come first
                     serve basis :).
-
-                <ul class="actions">
-                    <li><a class="button" href="{{ url('index') }}">Back To Home Page</a></li>
-                </ul>
                 </p>
-            </section>
+                    <a class="button" href="{{ url('index') }}" style="display: block; text-align: center;">Back To Home Page</a>
+            </article>
         </div>
     </div>
     <!-- Features 1 -->
@@ -57,8 +58,4 @@
             </div>
         </div>
     </div>
-
-
-
-
 {% endblock %}

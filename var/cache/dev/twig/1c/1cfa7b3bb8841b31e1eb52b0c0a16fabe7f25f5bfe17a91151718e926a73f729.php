@@ -24,16 +24,17 @@ class __TwigTemplate_a662075bd5594aec798f1db763b73f88ed986c74d71cbc09455f2e5b907
         $this->source = $this->getSourceContext();
 
         // line 1
-        $this->parent = $this->loadTemplate("base.html.twig", "user/show.html.twig", 1);
+        $this->parent = $this->loadTemplate("no-sidebar.html.twig", "user/show.html.twig", 1);
         $this->blocks = [
             'title' => [$this, 'block_title'],
+            'pageHeader' => [$this, 'block_pageHeader'],
             'body' => [$this, 'block_body'],
         ];
     }
 
     protected function doGetParent(array $context)
     {
-        return "base.html.twig";
+        return "no-sidebar.html.twig";
     }
 
     protected function doDisplay(array $context, array $blocks = [])
@@ -62,7 +63,25 @@ class __TwigTemplate_a662075bd5594aec798f1db763b73f88ed986c74d71cbc09455f2e5b907
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "title"));
 
-        echo "User";
+        echo "Show";
+        
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
+
+        
+        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->leave($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof);
+
+    }
+
+    // line 4
+    public function block_pageHeader($context, array $blocks = [])
+    {
+        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
+        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->enter($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "pageHeader"));
+
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "pageHeader"));
+
+        echo "Show Page";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
 
@@ -121,14 +140,14 @@ class __TwigTemplate_a662075bd5594aec798f1db763b73f88ed986c74d71cbc09455f2e5b907
                     <a href=\"";
         // line 31
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("user_index");
-        echo "\">back to list</a>
+        echo "\"><button type=\"button\" class=\"btn btn-primary btn-sm\" >Back to list</button></a>
 
                     <a href=\"";
         // line 33
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("user_edit", ["id" => twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 33, $this->source); })()), "id", [])]), "html", null, true);
-        echo "\">edit</a>
+        echo "\"><button type=\"button\" class=\"btn btn-primary btn-sm\" >Edit</button></a>
 
-                    ";
+                   ";
         // line 35
         echo twig_include($this->env, $context, "user/_delete_form.html.twig");
         echo "
@@ -157,15 +176,15 @@ class __TwigTemplate_a662075bd5594aec798f1db763b73f88ed986c74d71cbc09455f2e5b907
 
     public function getDebugInfo()
     {
-        return array (  133 => 35,  128 => 33,  123 => 31,  115 => 26,  108 => 22,  101 => 18,  94 => 14,  84 => 6,  75 => 5,  57 => 3,  27 => 1,);
+        return array (  152 => 35,  147 => 33,  142 => 31,  134 => 26,  127 => 22,  120 => 18,  113 => 14,  103 => 6,  94 => 5,  76 => 4,  58 => 3,  27 => 1,);
     }
 
     public function getSourceContext()
     {
-        return new Source("{% extends 'base.html.twig' %}
+        return new Source("{% extends 'no-sidebar.html.twig' %}
 
-{% block title %}User{% endblock %}
-
+{% block title %}Show{% endblock %}
+{% block pageHeader %}Show Page{% endblock %}
 {% block body %}
     <div class=\"container\">
         <div class=\"row\">
@@ -192,11 +211,11 @@ class __TwigTemplate_a662075bd5594aec798f1db763b73f88ed986c74d71cbc09455f2e5b907
                         </tbody>
                     </table>
 
-                    <a href=\"{{ path('user_index') }}\">back to list</a>
+                    <a href=\"{{ path('user_index') }}\"><button type=\"button\" class=\"btn btn-primary btn-sm\" >Back to list</button></a>
 
-                    <a href=\"{{ path('user_edit', {'id': user.id}) }}\">edit</a>
+                    <a href=\"{{ path('user_edit', {'id': user.id}) }}\"><button type=\"button\" class=\"btn btn-primary btn-sm\" >Edit</button></a>
 
-                    {{ include('user/_delete_form.html.twig') }}
+                   {{ include('user/_delete_form.html.twig') }}
             </div>
         </div>
     </div>

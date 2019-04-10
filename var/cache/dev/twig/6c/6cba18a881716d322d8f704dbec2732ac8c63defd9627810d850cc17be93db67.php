@@ -159,11 +159,11 @@ class __TwigTemplate_090024f180d047548dabb684411e8c144818824d3d2b881b9efed9a0dc8
                     <a href=\"";
             // line 28
             echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("user_show", ["id" => twig_get_attribute($this->env, $this->source, $context["user"], "id", [])]), "html", null, true);
-            echo "\">show</a>
+            echo "\"><button type=\"button\" class=\"btn btn-primary btn-sm\" >Show</button></a>
                     <a href=\"";
             // line 29
             echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("user_edit", ["id" => twig_get_attribute($this->env, $this->source, $context["user"], "id", [])]), "html", null, true);
-            echo "\">edit</a>
+            echo "\"><button type=\"button\" class=\"btn btn-primary btn-sm\" >Edit</button></a>
                 </td>
             </tr>
         ";
@@ -186,7 +186,7 @@ class __TwigTemplate_090024f180d047548dabb684411e8c144818824d3d2b881b9efed9a0dc8
     <a href=\"";
         // line 40
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("user_new");
-        echo "\">Create new</a>
+        echo "\"><button type=\"button\" class=\"btn btn-primary btn-sm\" >Create New</button></a>
 ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
@@ -240,8 +240,8 @@ class __TwigTemplate_090024f180d047548dabb684411e8c144818824d3d2b881b9efed9a0dc8
                 <td>{{ user.roles ? user.roles|json_encode : '' }}</td>
                 <td>{{ user.password }}</td>
                 <td>
-                    <a href=\"{{ path('user_show', {'id': user.id}) }}\">show</a>
-                    <a href=\"{{ path('user_edit', {'id': user.id}) }}\">edit</a>
+                    <a href=\"{{ path('user_show', {'id': user.id}) }}\"><button type=\"button\" class=\"btn btn-primary btn-sm\" >Show</button></a>
+                    <a href=\"{{ path('user_edit', {'id': user.id}) }}\"><button type=\"button\" class=\"btn btn-primary btn-sm\" >Edit</button></a>
                 </td>
             </tr>
         {% else %}
@@ -252,7 +252,7 @@ class __TwigTemplate_090024f180d047548dabb684411e8c144818824d3d2b881b9efed9a0dc8
         </tbody>
     </table>
 
-    <a href=\"{{ path('user_new') }}\">Create new</a>
+    <a href=\"{{ path('user_new') }}\"><button type=\"button\" class=\"btn btn-primary btn-sm\" >Create New</button></a>
 {% endblock %}
 ", "user/index.html.twig", "/Users/jeremiah/Desktop/BookAuction/templates/user/index.html.twig");
     }

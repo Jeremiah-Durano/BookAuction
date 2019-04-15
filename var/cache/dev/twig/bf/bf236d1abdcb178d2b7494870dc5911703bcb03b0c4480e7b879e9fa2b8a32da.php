@@ -39,11 +39,6 @@ class __TwigTemplate_915560beb042b3f63b3edce392a8c24606e243ecfe04f58df657c827968
 
         // line 1
         echo "<!DOCTYPE HTML>
-<!--
-\tTelephasic by HTML5 UP
-\thtml5up.net | @ajlkn
-\tFree for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 \t<head>
 \t\t<title>Telephasic by HTML5 UP</title>
@@ -275,11 +270,6 @@ class __TwigTemplate_915560beb042b3f63b3edce392a8c24606e243ecfe04f58df657c827968
     public function getSourceContext()
     {
         return new Source("<!DOCTYPE HTML>
-<!--
-\tTelephasic by HTML5 UP
-\thtml5up.net | @ajlkn
-\tFree for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 \t<head>
 \t\t<title>Telephasic by HTML5 UP</title>

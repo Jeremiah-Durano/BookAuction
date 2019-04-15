@@ -59,7 +59,7 @@ class __TwigTemplate_3b2a37d7646cfb56bb04bc6f20f19e46b5a8455e332bc1670044f7d55d0
         <div id=\"header\" class=\"container\">
 
             <!-- Logo -->
-            <h1 id=\"logo\"><a href=\"#\">Book Auction</a></h1>
+            <h1 id=\"logo\"><a href=\"/\">Book Auction Home</a></h1>
 
             <!-- Nav -->
             <nav id=\"nav\">
@@ -231,7 +231,7 @@ class __TwigTemplate_3b2a37d7646cfb56bb04bc6f20f19e46b5a8455e332bc1670044f7d55d0
         <div id=\"header\" class=\"container\">
 
             <!-- Logo -->
-            <h1 id=\"logo\"><a href=\"#\">Book Auction</a></h1>
+            <h1 id=\"logo\"><a href=\"/\">Book Auction Home</a></h1>
 
             <!-- Nav -->
             <nav id=\"nav\">

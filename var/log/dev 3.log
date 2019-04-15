@@ -1,0 +1,6 @@
+[2019-04-15 16:16:30] request.INFO: Matched route "default_about". {"route":"default_about","route_parameters":{"_route":"default_about","_controller":"App\\Controller\\DefaultController::about"},"request_uri":"http://localhost:8000/about","method":"GET"} []
+[2019-04-15 16:16:30] security.DEBUG: Checking for guard authentication credentials. {"firewall_key":"main","authenticators":1} []
+[2019-04-15 16:16:30] security.DEBUG: Checking support on guard authenticator. {"firewall_key":"main","authenticator":"App\\Security\\Authenticator"} []
+[2019-04-15 16:16:30] security.DEBUG: Guard authenticator does not support the request. {"firewall_key":"main","authenticator":"App\\Security\\Authenticator"} []
+[2019-04-15 16:16:30] security.INFO: Populated the TokenStorage with an anonymous Token. [] []
+[2019-04-15 16:16:30] request.INFO: Matched route "_wdt". {"route":"_wdt","route_parameters":{"_route":"_wdt","_controller":"web_profiler.controller.profiler::toolbarAction","token":"7ed302"},"request_uri":"http://localhost:8000/_wdt/7ed302","method":"GET"} []

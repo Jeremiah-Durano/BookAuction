@@ -8,9 +8,9 @@ use Symfony\Component\DependencyInjection\Exception\RuntimeException;
 
 include_once $this->targetDirs[3].'/vendor/symfony/framework-bundle/Controller/ControllerTrait.php';
 include_once $this->targetDirs[3].'/vendor/symfony/framework-bundle/Controller/AbstractController.php';
-include_once $this->targetDirs[3].'/src/Controller/AdminController.php';
 
-$this->services['App\Controller\AdminController'] = $instance = new \App\Controller\AdminController();
+
+
 
 $instance->setContainer(($this->privates['.service_locator.KTVqfp6'] ?? $this->load('get_ServiceLocator_KTVqfp6Service.php'))->withContext('App\\Controller\\AdminController', $this));
 

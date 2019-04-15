@@ -68,12 +68,16 @@ class __TwigTemplate_3b2a37d7646cfb56bb04bc6f20f19e46b5a8455e332bc1670044f7d55d0
         // line 23
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getUrl("app_login");
         echo "\">Login</a></li>
-                   <li class=\"break\"><a href=\"";
+                    <li><a href=\"";
         // line 24
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getUrl("book_index");
+        echo "\">Book</a></li>
+                   <li class=\"break\"><a href=\"";
+        // line 25
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getUrl("default_about");
         echo "\">About</a></li>
                     <a href=\"";
-        // line 25
+        // line 26
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getUrl("logout");
         echo "\">Logout</a>
 
@@ -104,7 +108,7 @@ class __TwigTemplate_3b2a37d7646cfb56bb04bc6f20f19e46b5a8455e332bc1670044f7d55d0
                 <section class=\"col-6 col-12-narrower feature\">
                     <div class=\"image-wrapper first\">
                         <a href=\"#\" class=\"image featured first\"><img src=\"";
-        // line 53
+        // line 54
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/pic01.jpg"), "html", null, true);
         echo "\" alt=\"\" /></a>
                     </div>
@@ -122,7 +126,7 @@ class __TwigTemplate_3b2a37d7646cfb56bb04bc6f20f19e46b5a8455e332bc1670044f7d55d0
                 <section class=\"col-6 col-12-narrower feature\">
                     <div class=\"image-wrapper\">
                         <a href=\"#\" class=\"image featured\"><img src=\"";
-        // line 68
+        // line 69
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/pic02.jpg"), "html", null, true);
         echo "\" alt=\"\" /></a>
                     </div>
@@ -209,7 +213,7 @@ class __TwigTemplate_3b2a37d7646cfb56bb04bc6f20f19e46b5a8455e332bc1670044f7d55d0
 
     public function getDebugInfo()
     {
-        return array (  183 => 4,  126 => 68,  108 => 53,  77 => 25,  73 => 24,  69 => 23,  47 => 4,  42 => 1,);
+        return array (  187 => 4,  130 => 69,  112 => 54,  81 => 26,  77 => 25,  73 => 24,  69 => 23,  47 => 4,  42 => 1,);
     }
 
     public function getSourceContext()
@@ -237,6 +241,7 @@ class __TwigTemplate_3b2a37d7646cfb56bb04bc6f20f19e46b5a8455e332bc1670044f7d55d0
             <nav id=\"nav\">
                 <ul>
                    <li><a href=\"{{ url('app_login') }}\">Login</a></li>
+                    <li><a href=\"{{ url('book_index') }}\">Book</a></li>
                    <li class=\"break\"><a href=\"{{ url('default_about') }}\">About</a></li>
                     <a href=\"{{ url('logout') }}\">Logout</a>
 

@@ -9,14 +9,18 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\IsGranted;
 
 /**
  * @Route("/book")
+ *
  */
 class BookController extends AbstractController
 {
     /**
      * @Route("/", name="book_index", methods={"GET"})
+     *
+     * @isGranted("ROLE_USER")
      */
     public function index(BookRepository $bookRepository): Response
     {
@@ -27,6 +31,8 @@ class BookController extends AbstractController
 
     /**
      * @Route("/new", name="book_new", methods={"GET","POST"})
+     *
+     * @isGranted("ROLE_USER")
      */
     public function new(Request $request): Response
     {
@@ -50,6 +56,8 @@ class BookController extends AbstractController
 
     /**
      * @Route("/{id}", name="book_show", methods={"GET"})
+     *
+     * @isGranted("ROLE_USER")
      */
     public function show(Book $book): Response
     {
@@ -60,6 +68,8 @@ class BookController extends AbstractController
 
     /**
      * @Route("/{id}/edit", name="book_edit", methods={"GET","POST"})
+     *
+     * @isGranted("ROLE_USER")
      */
     public function edit(Request $request, Book $book): Response
     {
@@ -82,6 +92,8 @@ class BookController extends AbstractController
 
     /**
      * @Route("/{id}", name="book_delete", methods={"DELETE"})
+     *
+     * @isGranted("ROLE_USER")
      */
     public function delete(Request $request, Book $book): Response
     {

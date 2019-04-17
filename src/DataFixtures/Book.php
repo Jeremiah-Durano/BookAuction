@@ -14,4 +14,5 @@ class Book extends Fixture
 
         $manager->flush();
     }
+
 }

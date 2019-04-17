@@ -49,13 +49,16 @@ class srcApp_KernelDevDebugContainerUrlMatcher extends Symfony\Bundle\FrameworkB
                     .')'
                     .'|/book/([^/]++)(?'
                         .'|(*:186)'
-                        .'|/edit(*:199)'
-                        .'|(*:207)'
+                        .'|/(?'
+                            .'|edit(*:202)'
+                            .'|bid(*:213)'
+                        .')'
+                        .'|(*:222)'
                     .')'
                     .'|/user/([^/]++)(?'
-                        .'|(*:233)'
-                        .'|/edit(*:246)'
-                        .'|(*:254)'
+                        .'|(*:248)'
+                        .'|/edit(*:261)'
+                        .'|(*:269)'
                     .')'
                 .')/?$}sDu',
         ];
@@ -68,11 +71,12 @@ class srcApp_KernelDevDebugContainerUrlMatcher extends Symfony\Bundle\FrameworkB
             149 => [[['_route' => '_profiler_exception_css', '_controller' => 'web_profiler.controller.exception::cssAction'], ['token'], null, null, false, false, null]],
             159 => [[['_route' => '_profiler', '_controller' => 'web_profiler.controller.profiler::panelAction'], ['token'], null, null, false, true, null]],
             186 => [[['_route' => 'book_show', '_controller' => 'App\\Controller\\BookController::show'], ['id'], ['GET' => 0], null, false, true, null]],
-            199 => [[['_route' => 'book_edit', '_controller' => 'App\\Controller\\BookController::edit'], ['id'], ['GET' => 0, 'POST' => 1], null, false, false, null]],
-            207 => [[['_route' => 'book_delete', '_controller' => 'App\\Controller\\BookController::delete'], ['id'], ['DELETE' => 0], null, false, true, null]],
-            233 => [[['_route' => 'user_show', '_controller' => 'App\\Controller\\UserController::show'], ['id'], ['GET' => 0], null, false, true, null]],
-            246 => [[['_route' => 'user_edit', '_controller' => 'App\\Controller\\UserController::edit'], ['id'], ['GET' => 0, 'POST' => 1], null, false, false, null]],
-            254 => [[['_route' => 'user_delete', '_controller' => 'App\\Controller\\UserController::delete'], ['id'], ['DELETE' => 0], null, false, true, null]],
+            202 => [[['_route' => 'book_edit', '_controller' => 'App\\Controller\\BookController::edit'], ['id'], ['GET' => 0, 'POST' => 1], null, false, false, null]],
+            213 => [[['_route' => 'book_bid', '_controller' => 'App\\Controller\\BookController::bid'], ['id'], ['GET' => 0, 'POST' => 1], null, false, false, null]],
+            222 => [[['_route' => 'book_delete', '_controller' => 'App\\Controller\\BookController::delete'], ['id'], ['DELETE' => 0], null, false, true, null]],
+            248 => [[['_route' => 'user_show', '_controller' => 'App\\Controller\\UserController::show'], ['id'], ['GET' => 0], null, false, true, null]],
+            261 => [[['_route' => 'user_edit', '_controller' => 'App\\Controller\\UserController::edit'], ['id'], ['GET' => 0, 'POST' => 1], null, false, false, null]],
+            269 => [[['_route' => 'user_delete', '_controller' => 'App\\Controller\\UserController::delete'], ['id'], ['DELETE' => 0], null, false, true, null]],
         ];
     }
 }

@@ -1390,6 +1390,14 @@
         <argument>2048</argument>
       </call>
       <call method="addListener">
+        <argument>console.command</argument>
+        <argument type="collection">
+          <argument type="service" id="debug.debug_handlers_listener"/>
+          <argument>configure</argument>
+        </argument>
+        <argument>2048</argument>
+      </call>
+      <call method="addListener">
         <argument>kernel.request</argument>
         <argument type="collection">
           <argument type="service" id="router_listener"/>
@@ -3688,9 +3696,10 @@
         <argument key="user" type="service" id=".errored..service_locator.wypGnUQ.App\Entity\User"/>
       </argument>
     </service>
-    <service id=".service_locator.yL2oC5x" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
+    <service id=".service_locator.3qTiU0p" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
       <tag name="container.service_locator"/>
       <argument type="collection">
+        <argument key="App\Controller\BookController::bid" type="service" id=".service_locator.PbXwDqA"/>
         <argument key="App\Controller\BookController::delete" type="service" id=".service_locator.PbXwDqA"/>
         <argument key="App\Controller\BookController::edit" type="service" id=".service_locator.PbXwDqA"/>
         <argument key="App\Controller\BookController::index" type="service" id=".service_locator.gIcf5jF"/>
@@ -3700,6 +3709,7 @@
         <argument key="App\Controller\UserController::edit" type="service" id=".service_locator.wypGnUQ"/>
         <argument key="App\Controller\UserController::index" type="service" id=".service_locator.JkextnA"/>
         <argument key="App\Controller\UserController::show" type="service" id=".service_locator.wypGnUQ"/>
+        <argument key="App\Controller\BookController:bid" type="service" id=".service_locator.PbXwDqA"/>
         <argument key="App\Controller\BookController:delete" type="service" id=".service_locator.PbXwDqA"/>
         <argument key="App\Controller\BookController:edit" type="service" id=".service_locator.PbXwDqA"/>
         <argument key="App\Controller\BookController:index" type="service" id=".service_locator.gIcf5jF"/>
@@ -4044,7 +4054,7 @@
       <argument type="service" id="security.token_storage"/>
     </service>
     <service id="debug.argument_resolver.service.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\ServiceValueResolver" public="false">
-      <argument type="service" id=".service_locator.yL2oC5x"/>
+      <argument type="service" id=".service_locator.3qTiU0p"/>
     </service>
     <service id="debug.argument_resolver.default.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\DefaultValueResolver" public="false"/>
     <service id="debug.argument_resolver.variadic.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\VariadicValueResolver" public="false"/>
@@ -4331,7 +4341,7 @@
     <service id="doctrine.orm.default_entity_manager.event_manager" alias="doctrine.dbal.default_connection.event_manager" public="false"/>
     <service id="logger" alias="monolog.logger"/>
     <service id="Psr\Log\LoggerInterface" alias="monolog.logger" public="false"/>
-    <service id="argument_resolver.controller_locator" alias=".service_locator.yL2oC5x"/>
+    <service id="argument_resolver.controller_locator" alias=".service_locator.3qTiU0p"/>
     <service id="twig.loader.filesystem" alias="twig.loader.native_filesystem" public="false"/>
     <service id="twig.loader" alias="twig.loader.native_filesystem"/>
     <service id="validator" alias="debug.validator" public="true"/>

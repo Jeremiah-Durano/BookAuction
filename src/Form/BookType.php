@@ -15,6 +15,7 @@ class BookType extends AbstractType
             ->add('name')
             ->add('author')
             ->add('description')
+            ->add('price')
         ;
     }
 

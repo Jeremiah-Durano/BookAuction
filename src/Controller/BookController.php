@@ -105,4 +105,46 @@ class BookController extends AbstractController
 
         return $this->redirectToRoute('book_index');
     }
+
+    /**
+     * @Route("/{id}/bid", name="book_bid", methods={"GET","POST"})
+     *
+     * @isGranted("ROLE_USER")
+     */
+
+    public function bid(Request $request, Book $book): Response
+    {
+        $form = $this->createForm(BookType::class, $book);
+        $form->handleRequest($request);
+
+        $priceBefore = $book->getPrice();
+        $priceAfter = $request->request->get('book')['price'];
+
+
+        if( ($priceAfter > $priceBefore) ){
+
+            $book->setPrice($priceAfter);
+
+        }
+        else if($priceAfter <= $priceBefore){
+
+            $book->setPrice($priceBefore);
+        }
+
+        if ($form->isSubmitted() && $form->isValid()) {
+
+            $entityManager = $this->getDoctrine()->getManager();
+            $entityManager->flush();
+
+            return $this->redirectToRoute('book_index', [
+                'id' => $book->getId(),
+            ]);
+
+        }
+
+        return $this->render('book/bid.html.twig', [
+            'book' => $book,
+            'form' => $form->createView(),
+        ]);
+    }
 }

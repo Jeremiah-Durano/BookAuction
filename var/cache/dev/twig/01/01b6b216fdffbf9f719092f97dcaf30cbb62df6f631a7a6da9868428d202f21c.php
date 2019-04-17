@@ -132,21 +132,28 @@ class __TwigTemplate_eeac2c7b0ced91c326cdaa655bdb81bd21c2bb4c8b263590b3cf1e1d197
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["book"]) || array_key_exists("book", $context) ? $context["book"] : (function () { throw new RuntimeError('Variable "book" does not exist.', 24, $this->source); })()), "description", []), "html", null, true);
         echo "</td>
             </tr>
+            <tr>
+                <th>Price</th>
+                <td>";
+        // line 28
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["book"]) || array_key_exists("book", $context) ? $context["book"] : (function () { throw new RuntimeError('Variable "book" does not exist.', 28, $this->source); })()), "price", []), "html", null, true);
+        echo "</td>
+            </tr>
         </tbody>
     </table>
 
     <a href=\"";
-        // line 29
+        // line 33
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("book_index");
         echo "\"><button type=\"button\" class=\"btn btn-primary btn-sm\" >Back to list</button></a>
 
     <a href=\"";
-        // line 31
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("book_edit", ["id" => twig_get_attribute($this->env, $this->source, (isset($context["book"]) || array_key_exists("book", $context) ? $context["book"] : (function () { throw new RuntimeError('Variable "book" does not exist.', 31, $this->source); })()), "id", [])]), "html", null, true);
+        // line 35
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("book_edit", ["id" => twig_get_attribute($this->env, $this->source, (isset($context["book"]) || array_key_exists("book", $context) ? $context["book"] : (function () { throw new RuntimeError('Variable "book" does not exist.', 35, $this->source); })()), "id", [])]), "html", null, true);
         echo "\"><button type=\"button\" class=\"btn btn-primary btn-sm\" >Edit</button></a>
 
     ";
-        // line 33
+        // line 37
         echo twig_include($this->env, $context, "book/_delete_form.html.twig");
         echo "
 ";
@@ -170,7 +177,7 @@ class __TwigTemplate_eeac2c7b0ced91c326cdaa655bdb81bd21c2bb4c8b263590b3cf1e1d197
 
     public function getDebugInfo()
     {
-        return array (  150 => 33,  145 => 31,  140 => 29,  132 => 24,  125 => 20,  118 => 16,  111 => 12,  103 => 6,  94 => 5,  76 => 4,  58 => 3,  27 => 1,);
+        return array (  157 => 37,  152 => 35,  147 => 33,  139 => 28,  132 => 24,  125 => 20,  118 => 16,  111 => 12,  103 => 6,  94 => 5,  76 => 4,  58 => 3,  27 => 1,);
     }
 
     public function getSourceContext()
@@ -199,6 +206,10 @@ class __TwigTemplate_eeac2c7b0ced91c326cdaa655bdb81bd21c2bb4c8b263590b3cf1e1d197
             <tr>
                 <th>Description</th>
                 <td>{{ book.description }}</td>
+            </tr>
+            <tr>
+                <th>Price</th>
+                <td>{{ book.price }}</td>
             </tr>
         </tbody>
     </table>

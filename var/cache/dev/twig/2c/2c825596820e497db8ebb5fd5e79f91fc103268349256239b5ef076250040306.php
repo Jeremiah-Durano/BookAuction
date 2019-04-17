@@ -109,50 +109,59 @@ class __TwigTemplate_75a337b9b459ba898122cd9cc54091576b48a5b5a2f036483bcf1613a58
                 <th>Name</th>
                 <th>Author</th>
                 <th>Description</th>
+                <th>Price</th>
                 <th>actions</th>
             </tr>
         </thead>
         <tbody>
         ";
-        // line 19
+        // line 20
         $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable((isset($context["books"]) || array_key_exists("books", $context) ? $context["books"] : (function () { throw new RuntimeError('Variable "books" does not exist.', 19, $this->source); })()));
+        $context['_seq'] = twig_ensure_traversable((isset($context["books"]) || array_key_exists("books", $context) ? $context["books"] : (function () { throw new RuntimeError('Variable "books" does not exist.', 20, $this->source); })()));
         $context['_iterated'] = false;
         foreach ($context['_seq'] as $context["_key"] => $context["book"]) {
-            // line 20
+            // line 21
             echo "            <tr>
                 <td>";
-            // line 21
+            // line 22
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["book"], "id", []), "html", null, true);
             echo "</td>
                 <td>";
-            // line 22
+            // line 23
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["book"], "name", []), "html", null, true);
             echo "</td>
                 <td>";
-            // line 23
+            // line 24
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["book"], "author", []), "html", null, true);
             echo "</td>
                 <td>";
-            // line 24
+            // line 25
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["book"], "description", []), "html", null, true);
+            echo "</td>
+                <td>";
+            // line 26
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["book"], "price", []), "html", null, true);
             echo "</td>
                 <td>
                     <a href=\"";
-            // line 26
+            // line 28
             echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("book_show", ["id" => twig_get_attribute($this->env, $this->source, $context["book"], "id", [])]), "html", null, true);
             echo "\"><button type=\"button\" class=\"btn btn-primary btn-sm\" >Show</button></a>
                     <a href=\"";
-            // line 27
+            // line 29
             echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("book_edit", ["id" => twig_get_attribute($this->env, $this->source, $context["book"], "id", [])]), "html", null, true);
             echo "\"><button type=\"button\" class=\"btn btn-primary btn-sm\" >Edit</button></a>
+                    <a href=\"";
+            // line 30
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("book_bid", ["id" => twig_get_attribute($this->env, $this->source, $context["book"], "id", [])]), "html", null, true);
+            echo "\"><button type=\"button\" class=\"btn btn-primary btn-sm\" >Bid</button></a>
                 </td>
             </tr>
         ";
             $context['_iterated'] = true;
         }
         if (!$context['_iterated']) {
-            // line 31
+            // line 34
             echo "            <tr>
                 <td colspan=\"5\">no records found</td>
             </tr>
@@ -161,17 +170,17 @@ class __TwigTemplate_75a337b9b459ba898122cd9cc54091576b48a5b5a2f036483bcf1613a58
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['book'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 35
+        // line 38
         echo "        </tbody>
     </table>
     <a href=\"";
-        // line 37
+        // line 40
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("book_new");
         echo "\"><button type=\"button\" class=\"btn btn-primary btn-sm\">Create New</button></a>
     <br>
     <br>
     <a class=\"button\" href=\"";
-        // line 40
+        // line 43
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getUrl("index");
         echo "\" style=\"display: block; text-align: center;\">Back To Home Page</a>
 
@@ -196,7 +205,7 @@ class __TwigTemplate_75a337b9b459ba898122cd9cc54091576b48a5b5a2f036483bcf1613a58
 
     public function getDebugInfo()
     {
-        return array (  175 => 40,  169 => 37,  165 => 35,  156 => 31,  147 => 27,  143 => 26,  138 => 24,  134 => 23,  130 => 22,  126 => 21,  123 => 20,  118 => 19,  103 => 6,  94 => 5,  76 => 4,  58 => 3,  27 => 1,);
+        return array (  184 => 43,  178 => 40,  174 => 38,  165 => 34,  156 => 30,  152 => 29,  148 => 28,  143 => 26,  139 => 25,  135 => 24,  131 => 23,  127 => 22,  124 => 21,  119 => 20,  103 => 6,  94 => 5,  76 => 4,  58 => 3,  27 => 1,);
     }
 
     public function getSourceContext()
@@ -215,6 +224,7 @@ class __TwigTemplate_75a337b9b459ba898122cd9cc54091576b48a5b5a2f036483bcf1613a58
                 <th>Name</th>
                 <th>Author</th>
                 <th>Description</th>
+                <th>Price</th>
                 <th>actions</th>
             </tr>
         </thead>
@@ -225,9 +235,11 @@ class __TwigTemplate_75a337b9b459ba898122cd9cc54091576b48a5b5a2f036483bcf1613a58
                 <td>{{ book.name }}</td>
                 <td>{{ book.author }}</td>
                 <td>{{ book.description }}</td>
+                <td>{{ book.price }}</td>
                 <td>
                     <a href=\"{{ path('book_show', {'id': book.id}) }}\"><button type=\"button\" class=\"btn btn-primary btn-sm\" >Show</button></a>
                     <a href=\"{{ path('book_edit', {'id': book.id}) }}\"><button type=\"button\" class=\"btn btn-primary btn-sm\" >Edit</button></a>
+                    <a href=\"{{ path('book_bid' , {'id':book.id })}}\"><button type=\"button\" class=\"btn btn-primary btn-sm\" >Bid</button></a>
                 </td>
             </tr>
         {% else %}

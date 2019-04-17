@@ -38,6 +38,7 @@ class srcApp_KernelDevDebugContainerUrlGenerator extends Symfony\Component\Routi
         'book_show' => [['id'], ['_controller' => 'App\\Controller\\BookController::show'], [], [['variable', '/', '[^/]++', 'id', true], ['text', '/book']], [], []],
         'book_edit' => [['id'], ['_controller' => 'App\\Controller\\BookController::edit'], [], [['text', '/edit'], ['variable', '/', '[^/]++', 'id', true], ['text', '/book']], [], []],
         'book_delete' => [['id'], ['_controller' => 'App\\Controller\\BookController::delete'], [], [['variable', '/', '[^/]++', 'id', true], ['text', '/book']], [], []],
+        'book_bid' => [['id'], ['_controller' => 'App\\Controller\\BookController::bid'], [], [['text', '/bid'], ['variable', '/', '[^/]++', 'id', true], ['text', '/book']], [], []],
         'index' => [[], ['_controller' => 'App\\Controller\\DefaultController::index'], [], [['text', '/']], [], []],
         'default_about' => [[], ['_controller' => 'App\\Controller\\DefaultController::about'], [], [['text', '/about']], [], []],
         'app_login' => [[], ['_controller' => 'App\\Controller\\SecurityController::login'], [], [['text', '/login']], [], []],

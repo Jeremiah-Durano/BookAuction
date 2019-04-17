@@ -187,6 +187,15 @@ class __TwigTemplate_090024f180d047548dabb684411e8c144818824d3d2b881b9efed9a0dc8
         // line 40
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("user_new");
         echo "\"><button type=\"button\" class=\"btn btn-primary btn-sm\" >Create New</button></a>
+    <br>
+    <br>
+    <br>
+    <a class=\"button\" href=\"";
+        // line 44
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getUrl("index");
+        echo "\" style=\"display: block; text-align: center;\">Back To Home Page</a>
+
+
 ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
@@ -208,7 +217,7 @@ class __TwigTemplate_090024f180d047548dabb684411e8c144818824d3d2b881b9efed9a0dc8
 
     public function getDebugInfo()
     {
-        return array (  188 => 40,  183 => 37,  174 => 33,  165 => 29,  161 => 28,  156 => 26,  152 => 25,  148 => 24,  144 => 23,  141 => 22,  136 => 21,  121 => 8,  112 => 7,  95 => 5,  77 => 4,  59 => 3,  27 => 1,);
+        return array (  195 => 44,  188 => 40,  183 => 37,  174 => 33,  165 => 29,  161 => 28,  156 => 26,  152 => 25,  148 => 24,  144 => 23,  141 => 22,  136 => 21,  121 => 8,  112 => 7,  95 => 5,  77 => 4,  59 => 3,  27 => 1,);
     }
 
     public function getSourceContext()
@@ -253,6 +262,12 @@ class __TwigTemplate_090024f180d047548dabb684411e8c144818824d3d2b881b9efed9a0dc8
     </table>
 
     <a href=\"{{ path('user_new') }}\"><button type=\"button\" class=\"btn btn-primary btn-sm\" >Create New</button></a>
+    <br>
+    <br>
+    <br>
+    <a class=\"button\" href=\"{{ url('index') }}\" style=\"display: block; text-align: center;\">Back To Home Page</a>
+
+
 {% endblock %}
 ", "user/index.html.twig", "/Users/jeremiah/Desktop/BookAuction/templates/user/index.html.twig");
     }

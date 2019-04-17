@@ -113,32 +113,34 @@ class __TwigTemplate_3b2a37d7646cfb56bb04bc6f20f19e46b5a8455e332bc1670044f7d55d0
         echo "\" alt=\"\" /></a>
                     </div>
                     <header>
-                        <h2>Semper magna neque vel<br />
-                            adipiscing curabitur</h2>
+                        <h2>You are a badass at making money<br />
+                            </h2>
                     </header>
-                    <p>Lorem ipsum dolor sit amet consectetur et sed adipiscing elit. Curabitur vel
-                        sem sit dolor neque semper magna. Lorem ipsum dolor sit amet consectetur et sed
-                        adipiscing elit. Curabitur vel sem sit.</p>
+                    <p>Cool Book about making money</p>
                     <ul class=\"actions\">
-                        <li><a href=\"#\" class=\"button\">See More</a></li>
+                        <li><a href=\"";
+        // line 62
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getUrl("book_index");
+        echo "\" class=\"button\">See More</a></li>
                     </ul>
                 </section>
                 <section class=\"col-6 col-12-narrower feature\">
                     <div class=\"image-wrapper\">
                         <a href=\"#\" class=\"image featured\"><img src=\"";
-        // line 69
+        // line 67
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/pic02.jpg"), "html", null, true);
         echo "\" alt=\"\" /></a>
                     </div>
                     <header>
-                        <h2>Amet lorem ipsum dolor<br />
-                            sit consequat magna</h2>
+                        <h2>The BFG
+                        </h2>
                     </header>
-                    <p>Lorem ipsum dolor sit amet consectetur et sed adipiscing elit. Curabitur vel
-                        sem sit dolor neque semper magna. Lorem ipsum dolor sit amet consectetur et sed
-                        adipiscing elit. Curabitur vel sem sit.</p>
+                    <p>A Nice Little Roald Dahl Book about a big friendly giant</p>
                     <ul class=\"actions\">
-                        <li><a href=\"#\" class=\"button\">See More</a></li>
+                        <li><a href=\"";
+        // line 75
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getUrl("book_index");
+        echo "\" class=\"button\">See More</a></li>
                     </ul>
                 </section>
             </div>
@@ -147,8 +149,8 @@ class __TwigTemplate_3b2a37d7646cfb56bb04bc6f20f19e46b5a8455e332bc1670044f7d55d0
     <!-- Promo -->
     <div id=\"promo-wrapper\">
         <section id=\"promo\">
-            <h2>Neque semper magna et lorem ipsum adipiscing</h2>
-            <a href=\"#\" class=\"button\">Breach the thresholds</a>
+            <h2>Back To Top</h2>
+            <a href=\"#\" class=\"button\">Press Me</a>
         </section>
     </div>
     <br>
@@ -213,7 +215,7 @@ class __TwigTemplate_3b2a37d7646cfb56bb04bc6f20f19e46b5a8455e332bc1670044f7d55d0
 
     public function getDebugInfo()
     {
-        return array (  187 => 4,  130 => 69,  112 => 54,  81 => 26,  77 => 25,  73 => 24,  69 => 23,  47 => 4,  42 => 1,);
+        return array (  189 => 4,  142 => 75,  131 => 67,  123 => 62,  112 => 54,  81 => 26,  77 => 25,  73 => 24,  69 => 23,  47 => 4,  42 => 1,);
     }
 
     public function getSourceContext()
@@ -274,14 +276,12 @@ class __TwigTemplate_3b2a37d7646cfb56bb04bc6f20f19e46b5a8455e332bc1670044f7d55d0
                         <a href=\"#\" class=\"image featured first\"><img src=\"{{ asset('images/pic01.jpg') }}\" alt=\"\" /></a>
                     </div>
                     <header>
-                        <h2>Semper magna neque vel<br />
-                            adipiscing curabitur</h2>
+                        <h2>You are a badass at making money<br />
+                            </h2>
                     </header>
-                    <p>Lorem ipsum dolor sit amet consectetur et sed adipiscing elit. Curabitur vel
-                        sem sit dolor neque semper magna. Lorem ipsum dolor sit amet consectetur et sed
-                        adipiscing elit. Curabitur vel sem sit.</p>
+                    <p>Cool Book about making money</p>
                     <ul class=\"actions\">
-                        <li><a href=\"#\" class=\"button\">See More</a></li>
+                        <li><a href=\"{{ url('book_index') }}\" class=\"button\">See More</a></li>
                     </ul>
                 </section>
                 <section class=\"col-6 col-12-narrower feature\">
@@ -289,14 +289,12 @@ class __TwigTemplate_3b2a37d7646cfb56bb04bc6f20f19e46b5a8455e332bc1670044f7d55d0
                         <a href=\"#\" class=\"image featured\"><img src=\"{{ asset('images/pic02.jpg') }}\" alt=\"\" /></a>
                     </div>
                     <header>
-                        <h2>Amet lorem ipsum dolor<br />
-                            sit consequat magna</h2>
+                        <h2>The BFG
+                        </h2>
                     </header>
-                    <p>Lorem ipsum dolor sit amet consectetur et sed adipiscing elit. Curabitur vel
-                        sem sit dolor neque semper magna. Lorem ipsum dolor sit amet consectetur et sed
-                        adipiscing elit. Curabitur vel sem sit.</p>
+                    <p>A Nice Little Roald Dahl Book about a big friendly giant</p>
                     <ul class=\"actions\">
-                        <li><a href=\"#\" class=\"button\">See More</a></li>
+                        <li><a href=\"{{ url('book_index') }}\" class=\"button\">See More</a></li>
                     </ul>
                 </section>
             </div>
@@ -305,8 +303,8 @@ class __TwigTemplate_3b2a37d7646cfb56bb04bc6f20f19e46b5a8455e332bc1670044f7d55d0
     <!-- Promo -->
     <div id=\"promo-wrapper\">
         <section id=\"promo\">
-            <h2>Neque semper magna et lorem ipsum adipiscing</h2>
-            <a href=\"#\" class=\"button\">Breach the thresholds</a>
+            <h2>Back To Top</h2>
+            <a href=\"#\" class=\"button\">Press Me</a>
         </section>
     </div>
     <br>

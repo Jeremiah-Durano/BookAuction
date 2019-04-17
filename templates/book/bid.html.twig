@@ -1,0 +1,12 @@
+{% extends 'no-sidebar.html.twig' %}
+
+{% block title %}Bid{% endblock %}
+{% block pageHeader %}Bid{% endblock %}
+{% block body %}
+    <h1>Bid for a Book</h1>
+
+    {{ include('book/_form.html.twig') }}
+    <br>
+
+    <a href="{{ path('book_index') }}"><button type="button" class="btn btn-primary btn-sm" >Back To List</button></a>
+{% endblock %}

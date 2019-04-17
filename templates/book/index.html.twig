@@ -12,6 +12,7 @@
                 <th>Name</th>
                 <th>Author</th>
                 <th>Description</th>
+                <th>Price</th>
                 <th>actions</th>
             </tr>
         </thead>
@@ -22,9 +23,11 @@
                 <td>{{ book.name }}</td>
                 <td>{{ book.author }}</td>
                 <td>{{ book.description }}</td>
+                <td>{{ book.price }}</td>
                 <td>
                     <a href="{{ path('book_show', {'id': book.id}) }}"><button type="button" class="btn btn-primary btn-sm" >Show</button></a>
                     <a href="{{ path('book_edit', {'id': book.id}) }}"><button type="button" class="btn btn-primary btn-sm" >Edit</button></a>
+                    <a href="{{ path('book_bid' , {'id':book.id })}}"><button type="button" class="btn btn-primary btn-sm" >Bid</button></a>
                 </td>
             </tr>
         {% else %}

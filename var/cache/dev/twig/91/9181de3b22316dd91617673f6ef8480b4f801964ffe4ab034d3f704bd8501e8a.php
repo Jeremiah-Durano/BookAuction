@@ -46,7 +46,8 @@ class __TwigTemplate_89bc3ee888998c06df59926db73824c5353c3892b27715a58abde95e623
         // line 3
         echo twig_escape_filter($this->env, $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderCsrfToken(("delete" . twig_get_attribute($this->env, $this->source, (isset($context["book"]) || array_key_exists("book", $context) ? $context["book"] : (function () { throw new RuntimeError('Variable "book" does not exist.', 3, $this->source); })()), "id", []))), "html", null, true);
         echo "\">
-    <button class=\"btn\">Delete</button>
+    <br>
+    <button type=\"button\" class=\"btn btn-primary btn-sm\" >Delete</button>
 </form>
 ";
         
@@ -77,7 +78,8 @@ class __TwigTemplate_89bc3ee888998c06df59926db73824c5353c3892b27715a58abde95e623
         return new Source("<form method=\"post\" action=\"{{ path('book_delete', {'id': book.id}) }}\" onsubmit=\"return confirm('Are you sure you want to delete this item?');\">
     <input type=\"hidden\" name=\"_method\" value=\"DELETE\">
     <input type=\"hidden\" name=\"_token\" value=\"{{ csrf_token('delete' ~ book.id) }}\">
-    <button class=\"btn\">Delete</button>
+    <br>
+    <button type=\"button\" class=\"btn btn-primary btn-sm\" >Delete</button>
 </form>
 ", "book/_delete_form.html.twig", "/Users/jeremiah/Desktop/BookAuction/templates/book/_delete_form.html.twig");
     }

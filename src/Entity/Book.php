@@ -31,6 +31,11 @@ class Book
      */
     private $description;
 
+    /**
+     * @ORM\Column(type="decimal", precision=10, scale=2)
+     */
+    private $price;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -68,6 +73,18 @@ class Book
     public function setDescription(string $description): self
     {
         $this->description = $description;
+
+        return $this;
+    }
+
+    public function getPrice()
+    {
+        return $this->price;
+    }
+
+    public function setPrice($price): self
+    {
+        $this->price = $price;
 
         return $this;
     }
